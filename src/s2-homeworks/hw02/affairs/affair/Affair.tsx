@@ -35,7 +35,7 @@ function Affair(props: AffairPropsType) {
             </div>
 
             <button
-                id={'hw2-button-delete-' + props.affair}
+                id={'hw2-button-delete-' + props.affair._id}
                 className={buttonClass}
                 onClick={deleteCallback}
                 // need to fix
