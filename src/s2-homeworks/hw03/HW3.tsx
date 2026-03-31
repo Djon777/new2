@@ -22,7 +22,7 @@ export type UserType = {
     _id: string // need to fix any
     name: string // need to fix any
 }
-
+//commit
 export const pureAddUserCallback = (name: string, setUsers: (users:UserType[]) => void, users: UserType[]) => { // need to fix any
     const user: UserType = {
         _id: v1(),
