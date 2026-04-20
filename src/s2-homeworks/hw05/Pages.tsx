@@ -27,6 +27,12 @@ function Pages() {
 
                 {/*роут для несуществующей страницы должен отрисовать <Error404 />*/}
                 {/*<Route ...*/}
+                <Route path='/' element = {<Navigate to = {'/pre-junior'}/>}/>
+                <Route path='/pre-junior' element={<PreJunior/>} />
+                <Route path='/junior' element={<Junior/>} />
+                <Route path='/juniorPlus' element={<JuniorPlus/>} />
+                <Route path='/*' element={<Navigate to = {'/error404'}/>}/>
+
             </Routes>
         </div>
     )

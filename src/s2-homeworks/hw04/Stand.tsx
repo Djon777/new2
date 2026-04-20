@@ -28,15 +28,16 @@ const Stand = () => {
                         value={stateForAllInputs}
                         onChangeText={setValue}
                         error={error}
-                        onEnter={() => {
-                            setError(
-                                stateForAllInputs.trim()
-                                    ? ''
-                                    : 'Error'
-                            )
-                            setValue('')
+                    onEnter={() => {
+                            if(!stateForAllInputs.trim()) {
+                                setError('Error')
+                            }else {
+                                 setError('')
+                                setValue('')
+                                }
                         }}
                     />
+                    {error && <div className={s.errorMessage}>{error}</div>}
                 </div>
             </div>
 
