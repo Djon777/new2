@@ -19,7 +19,7 @@ import GreetingContainer from './GreetingContainer'
 
 // types
 export type UserType = {
-    _id: namber // need to fix any /string
+    _id: string // need to fix any /string
     name: string // need to fix any
 }
 //commit
